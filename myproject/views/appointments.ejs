@@ -1,0 +1,75 @@
+<%- include header.ejs%>
+
+<body style="background-color:#D2B4DE    ;">
+
+<br>
+<h1> BOOK APPOINTMENT NOW!</h1>
+
+<br>
+
+<form action="/contact/booking" method="post" ><body>
+
+  
+  <div class="form-group" >
+    <label for="name">NAME</label>
+    <input type="text" class="form-control" id="name" style=" width:50%" name="name" aria-describedby="nameHelp" placeholder="Enter name" required>
+    </div><br>
+    
+    <div class="form-group">
+        <label for="mobile">MOBILE NO</label>
+        <input type="text" class="form-control"  style=" width:50%" id="mobile" name="mobile" aria-describedby="mobileHelp" placeholder="Enter mobile no" required>
+        </div><br>
+
+        <div class="form-group">
+          <label for="name">GENDER</label>
+        <select class="form-control form-control-lg" style=" width:50%"  name="gender" required>
+            <option selected>Gender</option>
+            <option value="1">Female</option>
+            <option value="2">Male</option>
+            <option value="3">Transgender</option>
+            </select><br>
+
+
+        <div class="form-group">
+          <label for="name">SERVICE</label>
+         
+      <select class="form-control form-control-lg" style=" width:50%"  name="service" required>
+            
+          <option selected>Services</option>
+          <option value="1">Facial</option>
+          <option value="2">Haircut</option>
+          <option value="3">Hairstyling</option>
+          <option value="4">Haircolouring</option>
+          <option value="5">Hairtreatment</option>
+          
+       </select>
+<br>
+        
+        <div class="form-group">
+          <label for="name">DATE</label>
+          <br>
+      <input type="date" name="date"  style=" width:50%" min="2019-07-18" required>
+      </div><br>
+
+      <div class="form-group">
+      <label for="name">TIME</label>
+      <br>
+        <input type="time" name="time" style=" width:50%" required>
+      </div><br>
+
+      <div class="form-group">
+        <label for="mobile">MOBILE NO</label>
+        <input type="file" class="form-control"  action="/add" enctype="/multipart/"  name="pic" style=" width:50%" id="mobile" name="mobile" aria-describedby="mobileHelp" placeholder="Enter mobile no" required>
+        </div><br>
+
+
+
+<button type="submit"  class="btn btn-primary"> BOOK APPOINTMENT</button>
+  </form>
+
+  <br/>
+  <br/><br/>
+  <%- include footer.ejs%>
+</body>
+</html>
+
