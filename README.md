@@ -1,5 +1,5 @@
 
-<h2>"Hair Salon Website"</h2>
+<h2>"Hair Salon Website" :scissors::scissors:</h2>
 -A multipage, robust website created using MEAN Stack.<br>
 -There are four modules in our project:<br><br>
 
